@@ -1,0 +1,14 @@
+# Java Junk
+target/
+*.class
+
+# Python Junk
+__pycache__/
+*.pyc
+
+# IDE Settings (Optional, but good to ignore)
+.vscode/
+.idea/
+
+# Database (NEVER upload the live DB)
+*.db
