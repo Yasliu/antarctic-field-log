@@ -16,15 +16,15 @@ When a scientist enters physical measurements (bill length, flipper length, etc.
 
 This project demonstrates Inter-Process Communication (IPC) between two different tech stacks.
 
-#### Code Snippet
+```mermaid
 graph LR
-    User[Scientist] -- Input Data --> Java[Java Client (CLI)]
-    Java -- JSON Request --> Python[Python Flask Server]
-    Python -- Inference --> Model[ML Model (.pkl)]
+    User[Scientist] -- Input Data --> Java["Java Client (CLI)"]
+    Java -- JSON Request --> Python["Python Flask Server"]
+    Python -- Inference --> Model["ML Model (.pkl)"]
     Model -- Prediction --> Python
     Python -- JSON Response --> Java
-    Java -- SQL Insert --> DB[(SQLite Database)]
-
+    Java -- SQL Insert --> DB[("SQLite Database")]
+```
 - FrontEnd: Java 17 (Console Application)
 - Backend: Python (Flask REST API)
 - Database: SQLite (JDBC Connection)
@@ -48,6 +48,7 @@ graph LR
 
 ## 📂 Project Structure
 
+```text
 antarctic-field-log/
 ├── src/main/java/com/antarctic/
 │   ├── App.java              # Main entry point & UI Loop
@@ -58,7 +59,7 @@ antarctic-field-log/
 ├── penguin_columns.pkl       # Feature Mapping for One-Hot Encoding
 ├── pom.xml                   # Maven Configuration
 └── antarctic_log.db          # Local Database (Auto-generated)
-
+```
 ---
 
 ## 🚀 Getting Started
