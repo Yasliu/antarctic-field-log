@@ -30,7 +30,8 @@ public class App {
             }
 
             System.out.println("Enter name of Island: ");
-            String island = sc.next();
+            String rawIsland = sc.next();
+            String island = InputValidator.formatIslandName(rawIsland);
 
             System.out.println("Enter sex: ");
             String sex = sc.next();
